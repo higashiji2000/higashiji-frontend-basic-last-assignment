@@ -1,0 +1,32 @@
+@use "../../variables" as *;
+@use "../../utilities.scss" as *;
+
+.button {
+  display: inline-block;
+  width: 180px;
+  height: 45px;
+  margin: 0;
+  padding: 0px 16px;
+  background-color: $black;
+  text-align: center;
+  line-height: 45px;
+  font-size: 14px;
+  color: $white;
+
+  @include md {
+    width: 150px;
+    height: 55px;
+    line-height: 55px;
+  }
+  @include lg {
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
+  }
+  &:hover {
+    background-color: $orange_bistre;
+    color: $white;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+}
