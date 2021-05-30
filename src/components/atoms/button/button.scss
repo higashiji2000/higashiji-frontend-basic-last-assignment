@@ -12,6 +12,7 @@
   line-height: 45px;
   font-size: 14px;
   color: $white;
+  transition: 0.2s;
 
   @include md {
     width: 150px;
@@ -27,6 +28,5 @@
     background-color: $orange_bistre;
     color: $white;
     text-decoration: none;
-    transition: background-color 0.2s;
   }
 }
