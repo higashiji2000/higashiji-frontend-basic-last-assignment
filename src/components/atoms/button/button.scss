@@ -14,19 +14,25 @@
   color: $white;
   transition: 0.2s;
 
-  @include md {
-    width: 150px;
-    height: 55px;
-    line-height: 55px;
-  }
-  @include lg {
-    width: 200px;
-    height: 55px;
-    line-height: 55px;
-  }
   &:hover {
     background-color: $orange_bistre;
     color: $white;
     text-decoration: none;
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .button {
+    width: 150px;
+    height: 55px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .button {
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
   }
 }
