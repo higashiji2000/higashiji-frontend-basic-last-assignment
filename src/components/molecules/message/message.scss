@@ -6,22 +6,22 @@
 }
 
 .title-text {
+  margin-bottom: 6px;
   font-family: $fontfamily-mincho;
   font-size: $L;
-  text-align: center;
   line-height: 30px;
-  margin-bottom: 6px;
+  text-align: center;
 }
 
 .explanation-text-wrapper {
-  text-align: center;
   margin: 0;
   line-height: 28px;
+  text-align: center;
 }
 
 .explanation-text {
-  font-size: $S;
   margin: 0;
+  font-size: $S;
 }
 
 @media screen and (min-width: $breakpoint-md) {
@@ -29,8 +29,8 @@
     padding: 52px 20px;
   }
   .title-text {
-    font-size: $XL;
     margin-bottom: 10px;
+    font-size: $XL;
     line-height: 54px;
   }
   .explanation-text-wrapper {
