@@ -13,15 +13,11 @@
   text-align: center;
 }
 
-.explanation-text-wrapper {
-  margin: 0;
-  line-height: 28px;
-  text-align: center;
-}
-
 .explanation-text {
   margin: 0;
   font-size: $S;
+  line-height: 28px;
+  text-align: center;
 }
 
 @media screen and (min-width: $breakpoint-md) {
@@ -33,7 +29,7 @@
     font-size: $XL;
     line-height: 54px;
   }
-  .explanation-text-wrapper {
+  .explanation-text {
     line-height: 36px;
   }
 }
