@@ -7,11 +7,11 @@
   height: 45px;
   margin: 0;
   padding: 0px 16px;
-  background-color: $black;
-  text-align: center;
   line-height: 45px;
   font-size: $S;
+  background-color: $black;
   color: $white;
+  text-align: center;
   transition: background-color 0.2s;
 
   &:hover {
