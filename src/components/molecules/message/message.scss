@@ -6,6 +6,9 @@
   text-align: center;
   padding: 32px 20px;
   color: $black;
+  @media screen and (min-width: $breakpoint-md) {
+    padding: 52px 20px;
+  }
 }
 
 .title-text {
@@ -14,23 +17,17 @@
   font-size: $L;
   line-height: 1.5;
   font-weight: normal;
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 10px;
+    font-size: $XL;
+  }
 }
 
 .explanation-text {
   margin: 0;
   font-size: $S;
   line-height: 2;
-}
-
-@media screen and (min-width: $breakpoint-md) {
-  .message-wrapper {
-    padding: 52px 20px;
-  }
-  .title-text {
-    margin-bottom: 10px;
-    font-size: $XL;
-  }
-  .explanation-text {
+  @media screen and (min-width: $breakpoint-md) {
     line-height: 2.6;
   }
 }
