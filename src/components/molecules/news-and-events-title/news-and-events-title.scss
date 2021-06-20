@@ -3,28 +3,21 @@
 .news-title-wrapper {
   display: flex;
   align-items: center;
+  color: $black;
 }
 
 .news-title {
   margin: 0;
-  line-height: 29px;
+  line-height: 1.5;
   font-size: $L;
   font-family: $fontfamily-mincho;
   font-weight: 400;
-  font-style: normal;
-  color: $black;
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: $XXL;
+  }
 }
 
 .news-title-sub {
   margin-left: 16px;
   font-size: $M;
-  font-style: normal;
-  color: $black;
-}
-
-@media screen and (min-width: $breakpoint-md) {
-  .news-title {
-    line-height: 57px;
-    font-size: $XXL;
-  }
 }
