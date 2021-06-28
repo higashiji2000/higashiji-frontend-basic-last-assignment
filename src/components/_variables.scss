@@ -25,27 +25,3 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
-
-@mixin sm {
-  @media screen and (min-width: $breakpoint-sm) {
-    @content;
-  }
-}
-
-@mixin md {
-  @media screen and (min-width: $breakpoint-md) {
-    @content;
-  }
-}
-
-@mixin lg {
-  @media screen and (min-width: $breakpoint-lg) {
-    @content;
-  }
-}
-
-@mixin xl {
-  @media screen and (min-width: $breakpoint-xl) {
-    @content;
-  }
-}
