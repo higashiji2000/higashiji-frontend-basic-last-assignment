@@ -3,6 +3,7 @@
 .news-and-events-more {
   display: flex;
   align-items: center;
+  width: 114px;
   text-decoration: none;
   color: $black;
   cursor: pointer;
@@ -13,7 +14,7 @@
     color: $gray_nobel;
   }
 
-  .fas {
+  .fa-chevron-right {
     margin-left: 16px;
 
     &::before {
@@ -22,7 +23,7 @@
     }
   }
 
-  p {
+  .news-and-events-more-text {
     margin: 0;
     font-size: $fontsize-s;
     font-style: normal;
