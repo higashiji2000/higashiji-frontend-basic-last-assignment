@@ -1,0 +1,90 @@
+@use "../../variables" as *;
+
+.card {
+  position: relative;
+  width: 540px;
+  border: none;
+  border-radius: 0px;
+  color: $black;
+
+  @media screen and (min-width: $breakpoint-md) {
+    width: 224px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border-left: solid 75px $white;
+    border-right: solid 75px transparent;
+    border-top: solid 75px $white;
+    border-bottom: solid 75px transparent;
+    z-index: 1;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    font-size: $fontsize-l;
+    font-weight: bold;
+    color: $orange_bistre;
+    z-index: 1;
+  }
+
+  .card-img-wrapper {
+    overflow: hidden;
+
+    .card-img-top {
+      transition: transform 0.5s ease;
+
+      &:hover {
+        @media screen and (min-width: $breakpoint-md) {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    background-color: $white_smoke;
+
+    .card-text {
+      margin: 0 0 30px;
+    }
+
+    .button {
+      display: flex;
+      width: 180px;
+      height: 45px;
+      padding: 0px 16px;
+      font-size: $fontsize-s;
+      align-items: center;
+      justify-content: center;
+      background-color: $black;
+      color: $white;
+      transition: background-color 0.2s;
+
+      @media screen and (min-width: $breakpoint-md) {
+        width: 150px;
+        height: 55px;
+      }
+
+      @media screen and (min-width: $breakpoint-lg) {
+        width: 200px;
+      }
+
+      &:hover {
+        color: $white;
+        background-color: $orange_bistre;
+        text-decoration: none;
+      }
+    }
+  }
+}
