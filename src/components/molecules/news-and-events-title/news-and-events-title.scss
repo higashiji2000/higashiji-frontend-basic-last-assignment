@@ -8,11 +8,12 @@
 
 .news-title {
   margin: 0;
-  line-height: 1.5;
+  line-height: 29px;
   font-size: $fontsize-l;
   font-family: $fontfamily-mincho;
   font-weight: 400;
   @media screen and (min-width: $breakpoint-md) {
+    line-height: 57px;
     font-size: $fontsize-xxl;
   }
 }
