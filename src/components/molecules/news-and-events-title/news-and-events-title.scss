@@ -9,15 +9,15 @@
 .news-title {
   margin: 0;
   line-height: 1.5;
-  font-size: $L;
+  font-size: $fontsize-l;
   font-family: $fontfamily-mincho;
   font-weight: 400;
   @media screen and (min-width: $breakpoint-md) {
-    font-size: $XXL;
+    font-size: $fontsize-xxl;
   }
 }
 
 .news-title-sub {
   margin-left: 16px;
-  font-size: $M;
+  font-size: $fontsize-m;
 }
