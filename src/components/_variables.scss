@@ -11,12 +11,12 @@ $orange_bistre: #442606;
 $black_50: rgba(0, 0, 0, 0.5);
 $black: #000000;
 
-$XS: 12px;
-$S: 14px;
-$M: 16px;
-$L: 20px;
-$XL: 36px;
-$XXL: 40px;
+$fontsize-xs: 12px;
+$fontsize-s: 14px;
+$fontsize-m: 16px;
+$fontsize-l: 20px;
+$fontsize-xl: 36px;
+$fontsize-xxl: 40px;
 
 $fontfamily-mincho: "Noto Serif JP", serif;
 $fontfamily-gothic: "Roboto", "Noto Sans JP", sans-serif;
@@ -25,27 +25,3 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
-
-@mixin sm {
-  @media screen and (min-width: $breakpoint-sm) {
-    @content;
-  }
-}
-
-@mixin md {
-  @media screen and (min-width: $breakpoint-md) {
-    @content;
-  }
-}
-
-@mixin lg {
-  @media screen and (min-width: $breakpoint-lg) {
-    @content;
-  }
-}
-
-@mixin xl {
-  @media screen and (min-width: $breakpoint-xl) {
-    @content;
-  }
-}
