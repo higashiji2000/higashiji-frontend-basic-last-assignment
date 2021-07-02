@@ -1,9 +1,8 @@
 @use "../../variables" as *;
 
 .news-and-events-more {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  width: 114px;
   text-decoration: none;
   color: $black;
   cursor: pointer;
