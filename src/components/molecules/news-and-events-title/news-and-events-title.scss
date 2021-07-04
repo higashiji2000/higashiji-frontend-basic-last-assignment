@@ -11,11 +11,13 @@
     font-size: $fontsize-l;
     font-family: $fontfamily-mincho;
     font-weight: 400;
+
     @media screen and (min-width: $breakpoint-md) {
       line-height: 57px;
       font-size: $fontsize-xxl;
     }
   }
+
   .news-title-sub {
     margin-left: 16px;
     font-size: $fontsize-m;
