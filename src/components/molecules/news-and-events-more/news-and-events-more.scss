@@ -1,0 +1,23 @@
+@use "../../variables" as *;
+
+.news-and-events-more {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: $black;
+  transition: color 0.2s ease;
+
+  &:hover {
+    text-decoration: none;
+    color: $gray_nobel;
+  }
+
+  .fa-chevron-right {
+    margin-left: 16px;
+  }
+
+  .news-and-events-more-text {
+    margin: 0;
+    font-size: $fontsize-s;
+  }
+}
