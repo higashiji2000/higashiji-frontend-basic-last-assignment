@@ -3,6 +3,7 @@
 .plan-table {
   display: flex;
   flex-flow: column;
+  margin-bottom: 24px;
 
   & > * {
     margin: 0;
@@ -55,7 +56,7 @@
   }
 
   @media screen and (min-width: $breakpoint-md) {
-    margin-bottom: 24px;
+    margin-bottom: 0;
   }
 
   &:nth-child(2n) {
