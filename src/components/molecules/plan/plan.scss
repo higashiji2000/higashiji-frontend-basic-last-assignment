@@ -5,23 +5,23 @@
   flex-flow: column;
 
   & > * {
-    width: auto;
     margin: 0;
+    width: auto;
     text-align: center;
     color: $black;
   }
 
   .plan-title {
     padding: 20px 8px;
+    background-color: $orange_zorba;
     font-size: $fontsize-l;
     line-height: 29px;
-    background-color: $orange_zorba;
     color: $white;
   }
 
   .plan-data.plan-data-price {
-    border-top: 1px solid $gray_gainsboro;
     padding: 24px 0;
+    border-top: 1px solid $gray_gainsboro;
     background-color: $gray_desertStorm;
 
     .plan-data-price-text {
