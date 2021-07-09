@@ -1,0 +1,67 @@
+@use "../../variables" as *;
+
+.plan-table {
+  display: flex;
+  flex-flow: column;
+
+  & > * {
+    width: auto;
+    margin: 0;
+    text-align: center;
+  }
+
+  .plan-title {
+    padding: 20px 8px;
+    font-size: $fontsize-l;
+    line-height: 29px;
+    background-color: $orange_zorba;
+    color: $white;
+  }
+
+  .plan-data.plan-data-price {
+    border-top: 1px solid $gray_gainsboro;
+    padding: 24px 0;
+    background-color: $gray_desertStorm;
+
+    .plan-data-price-text {
+      margin-bottom: 16px;
+      height: 58px;
+      font-size: $fontsize-xxl;
+      line-height: 100%;
+      font-weight: 700;
+      color: $orange_bistre;
+
+      &::before {
+        content: "¥";
+        margin-right: 4px;
+        font-size: $fontsize-l;
+      }
+    }
+  }
+
+  .plan-data-price-subtext {
+    margin-bottom: 0;
+    font-size: $fontsize-s;
+    line-height: 20px;
+  }
+
+  .plan-data {
+    padding: 20px 10px;
+    border: 1px solid $gray_gainsboro;
+    border-top: none;
+    font-size: $fontsize-s;
+    line-height: 20px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 24px;
+  }
+
+  &:nth-child(2n) {
+    border: 5px solid $orange_bistre;
+
+    .plan-title {
+      background-color: $orange_bistre;
+    }
+  }
+}
