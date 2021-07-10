@@ -5,7 +5,7 @@
   flex-flow: column;
   margin-bottom: 24px;
 
-  & > * {
+  > * {
     margin: 0;
     width: auto;
     text-align: center;
@@ -20,12 +20,12 @@
     color: $white;
   }
 
-  .plan-data.plan-data-price {
+  dd:nth-child(2) {
     padding: 24px 0;
     border-top: 1px solid $gray_gainsboro;
     background-color: $gray_desertStorm;
 
-    .plan-data-price-text {
+    .plan-price-text {
       margin-bottom: 16px;
       height: 58px;
       font-size: $fontsize-xxl;
@@ -39,15 +39,15 @@
         font-size: $fontsize-l;
       }
     }
+
+    .plan-price-subtext {
+      margin-bottom: 0;
+      font-size: $fontsize-s;
+      line-height: 20px;
+    }
   }
 
-  .plan-data-price-subtext {
-    margin-bottom: 0;
-    font-size: $fontsize-s;
-    line-height: 20px;
-  }
-
-  .plan-data {
+  dd {
     padding: 20px 10px;
     border: 1px solid $gray_gainsboro;
     border-top: none;
