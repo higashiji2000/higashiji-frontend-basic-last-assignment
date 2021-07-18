@@ -20,23 +20,31 @@
     color: $white;
   }
 
-  dd:nth-child(2) {
-    padding: 24px 0;
-    border-top: 1px solid $gray_gainsboro;
-    background-color: $gray_desertStorm;
+  dd {
+    padding: 20px 10px;
+    border: 1px solid $gray_gainsboro;
+    border-top: none;
+    font-size: $fontsize-s;
+    line-height: 20px;
 
-    .plan-price-text {
-      margin-bottom: 16px;
-      height: 58px;
-      font-size: $fontsize-xxl;
-      line-height: 100%;
-      font-weight: 700;
-      color: $orange_bistre;
+    &:nth-child(2) {
+      padding: 24px 0;
+      border-top: 1px solid $gray_gainsboro;
+      background-color: $gray_desertStorm;
 
-      &::before {
-        content: "¥";
-        margin-right: 4px;
-        font-size: $fontsize-l;
+      .plan-price-text {
+        margin-bottom: 16px;
+        height: 58px;
+        font-size: $fontsize-xxl;
+        line-height: 100%;
+        font-weight: 700;
+        color: $orange_bistre;
+
+        &::before {
+          content: "¥";
+          margin-right: 4px;
+          font-size: $fontsize-l;
+        }
       }
     }
 
@@ -45,14 +53,6 @@
       font-size: $fontsize-s;
       line-height: 20px;
     }
-  }
-
-  dd {
-    padding: 20px 10px;
-    border: 1px solid $gray_gainsboro;
-    border-top: none;
-    font-size: $fontsize-s;
-    line-height: 20px;
   }
 
   @media screen and (min-width: $breakpoint-md) {
