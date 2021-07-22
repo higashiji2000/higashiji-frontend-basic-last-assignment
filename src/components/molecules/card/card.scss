@@ -16,18 +16,18 @@
     z-index: 1;
   }
 
-  .card-title {
-    position: absolute;
-    top: 0;
-    left: 6px;
-    font-size: $fontsize-l;
-    font-weight: bold;
-    color: $orange_bistre;
-    z-index: 1;
-  }
-
   .card-img-wrapper {
     overflow: hidden;
+
+    .card-title {
+      position: absolute;
+      top: 0;
+      left: 6px;
+      font-size: $fontsize-l;
+      font-weight: bold;
+      color: $orange_bistre;
+      z-index: 1;
+    }
 
     .card-img-top {
       transition: transform 0.5s ease;
