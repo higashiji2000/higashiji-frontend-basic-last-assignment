@@ -14,6 +14,7 @@
     border-left: solid 150px $white;
     border-bottom: solid 150px transparent;
     z-index: 1;
+    pointer-events: none;
   }
 
   .card-img-wrapper {
@@ -27,6 +28,7 @@
       font-weight: bold;
       color: $orange_bistre;
       z-index: 1;
+      pointer-events: none;
     }
 
     .card-img-top {
