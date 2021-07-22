@@ -58,12 +58,12 @@
   @media screen and (min-width: $breakpoint-md) {
     margin-bottom: 0;
   }
+}
 
-  &:nth-child(2n) {
-    border: 5px solid $orange_bistre;
+.plan-table-emphasized {
+  border: 5px solid $orange_bistre;
 
-    .plan-title {
-      background-color: $orange_bistre;
-    }
+  .plan-title {
+    background-color: $orange_bistre;
   }
 }
