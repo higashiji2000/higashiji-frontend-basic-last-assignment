@@ -2,14 +2,9 @@
 
 .card {
   position: relative;
-  width: 540px;
   border: none;
   border-radius: 0;
   color: $black;
-
-  @media screen and (min-width: $breakpoint-md) {
-    width: 224px;
-  }
 
   &::before {
     position: absolute;
