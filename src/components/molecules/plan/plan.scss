@@ -33,6 +33,7 @@
       background-color: $gray_desertStorm;
 
       .plan-price-text {
+        display: block;
         margin-bottom: 16px;
         height: 58px;
         font-size: $fontsize-xxl;
@@ -46,10 +47,6 @@
           font-size: $fontsize-l;
         }
       }
-    }
-
-    .plan-price-subtext {
-      margin-bottom: 0;
     }
   }
 
