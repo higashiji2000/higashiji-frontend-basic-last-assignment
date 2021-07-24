@@ -13,6 +13,10 @@
 
     a:hover {
       text-decoration: none;
+
+      p {
+        color: $orange-bistre;
+      }
     }
 
     article {
@@ -35,6 +39,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        transition: color 0.2s ease;
       }
     }
   }
