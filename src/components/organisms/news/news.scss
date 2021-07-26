@@ -12,34 +12,36 @@
     border-top: 1px solid $gray_gainsboro;
 
     a:hover {
-      text-decoration: none;
-
       p {
         color: $orange-bistre;
       }
     }
 
-    article {
-      border: 1px solid $gray_gainsboro;
-      border-top: none;
-      padding: 20px;
-      background-color: $white;
+    a {
+      text-decoration: none;
 
-      time {
-        display: block;
-        line-height: 1;
-        font-size: $fontsize-xs;
-        color: $gray_nobel;
-      }
+      article {
+        border: 1px solid $gray_gainsboro;
+        border-top: none;
+        padding: 20px;
+        background-color: $white;
 
-      p {
-        margin: 10px 0 0;
-        font-size: $fontsize-m;
-        color: $black;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        transition: color 0.2s ease;
+        time {
+          display: block;
+          line-height: 1;
+          font-size: $fontsize-xs;
+          color: $gray_nobel;
+        }
+
+        p {
+          margin: 10px 0 0;
+          font-size: $fontsize-m;
+          color: $black;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          transition: color 0.2s ease;
+        }
       }
     }
   }
