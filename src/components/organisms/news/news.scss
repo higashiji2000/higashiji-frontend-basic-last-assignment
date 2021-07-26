@@ -9,7 +9,6 @@
 
   .news-articles-container {
     margin-bottom: 30px;
-    border-top: 1px solid $gray_gainsboro;
 
     a:hover {
       p {
@@ -19,6 +18,10 @@
 
     a {
       text-decoration: none;
+
+      .news-article-top {
+        border-top: 1px solid $gray_gainsboro;
+      }
 
       article {
         border: 1px solid $gray_gainsboro;
