@@ -65,28 +65,25 @@
             color: $gray_gainsboro;
           }
         }
+        @media screen and (min-width: $breakpoint-lg) {
+          div:first-child {
+            padding: 0;
+            min-width: 221px;
+
+            img {
+              display: block;
+              width: 223px;
+            }
+          }
+
+          div:last-child p {
+            -webkit-line-clamp: 2;
+          }
+        }
       }
     }
   }
   .news-and-events-more-wrapper {
     text-align: right;
-  }
-
-  @media screen and (min-width: $breakpoint-lg) {
-    .events-articles-container a article {
-      div:first-child {
-        padding: 0;
-        min-width: 221px;
-
-        img {
-          display: block;
-          width: 223px;
-        }
-      }
-
-      div:last-child p {
-        -webkit-line-clamp: 2;
-      }
-    }
   }
 }
