@@ -20,11 +20,11 @@
 
       &:hover {
         article {
-          div:first-child img {
+          .events-article-img-wrapper img {
             transform: scale(1.2);
           }
 
-          div:last-child p {
+          .events-article-text-wrapper p {
             color: $orange-bistre;
           }
         }
@@ -35,7 +35,7 @@
         align-items: center;
         background-color: $white;
 
-        div:first-child {
+        .events-article-img-wrapper {
           overflow: hidden;
 
           img {
@@ -44,14 +44,14 @@
           }
         }
 
-        div:last-child {
+        .events-article-text-wrapper {
           padding: 10px 20px 16px;
 
           p {
             margin-bottom: 8px;
             font-size: $fontsize-m;
             color: $black;
-            transition: color 0.2s ease;
+            transition: color 0.2s;
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 1;
@@ -65,9 +65,9 @@
             color: $gray_gainsboro;
           }
         }
+
         @media screen and (min-width: $breakpoint-lg) {
           div:first-child {
-            padding: 0;
             min-width: 221px;
 
             img {
@@ -83,6 +83,7 @@
       }
     }
   }
+
   .news-and-events-more-wrapper {
     text-align: right;
   }
