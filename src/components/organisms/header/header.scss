@@ -110,10 +110,13 @@
 
       @media screen and (min-width: $breakpoint-xl) {
         .concept-submenu {
-          display: none;
+          display: block;
           position: absolute;
           width: 220px;
           background-color: $black;
+          opacity: 0;
+          transform: translateY(-10px);
+          transition: 0.5s;
 
           .nav-item {
             margin: 0;
@@ -121,17 +124,23 @@
             a {
               padding-left: 18px;
               height: 56px;
-
-              &:hover {
-                background-color: $orange_bistre;
-                color: $white;
-              }
+              display: none;
             }
           }
         }
 
         &:hover .concept-submenu {
-          display: block;
+          opacity: 1;
+          transform: translateY(0);
+
+          a {
+            display: flex;
+
+            &:hover {
+              background-color: $orange_bistre;
+              color: $white;
+            }
+          }
         }
       }
     }
