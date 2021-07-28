@@ -2,7 +2,16 @@
 
 .navbar {
   padding: 0 16px;
+  width: 100%;
   background-color: $black;
+
+  @media screen and (min-width: $breakpoint-xl) {
+    background-color: $black_50;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 15px 0 30px;
+  }
 
   * {
     color: $white;
@@ -22,6 +31,10 @@
 
     .navbar-brand img {
       width: 120px;
+
+      @media screen and (min-width: $breakpoint-xl) {
+        width: 140px;
+      }
     }
 
     button {
@@ -38,10 +51,15 @@
         align-items: center;
         padding: 15px 0;
         width: 100%;
+        transition: color 0.2s, background-color 0.2s;
 
         @media screen and (min-width: $breakpoint-xl) {
           height: 90px;
           padding: 0 20px;
+
+          &:hover {
+            color: $gray_nobel;
+          }
         }
       }
     }
@@ -73,16 +91,47 @@
             }
           }
         }
+        .concept-button {
+          padding: 0;
+        }
       }
 
       ul {
         list-style: none;
         padding: 0;
       }
+
       .collapse,
       .collapsing {
         .nav-item-concept {
           margin-left: 28px;
+        }
+      }
+
+      @media screen and (min-width: $breakpoint-xl) {
+        .concept-submenu {
+          display: none;
+          position: absolute;
+          width: 220px;
+          background-color: $black;
+
+          .nav-item {
+            margin: 0;
+
+            a {
+              padding-left: 18px;
+              height: 56px;
+
+              &:hover {
+                background-color: $orange_bistre;
+                color: $white;
+              }
+            }
+          }
+        }
+
+        &:hover .concept-submenu {
+          display: block;
         }
       }
     }
