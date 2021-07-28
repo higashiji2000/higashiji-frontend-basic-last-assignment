@@ -77,6 +77,14 @@
           }
         }
       }
+      .nav-item-concept-container-xl {
+        display: none;
+
+        @media screen and (min-width: $breakpoint-xl) {
+          display: block;
+        }
+      }
+
       ul {
         list-style: none;
         padding: 0;
