@@ -48,15 +48,9 @@
         }
       }
 
-      .nav-item-concept-container-lg {
-        @media screen and (min-width: $breakpoint-xl) {
-          display: none;
-        }
-
-        .nav-item-concept-container-lg-top {
-          display: flex;
-          position: relative;
-        }
+      .nav-item-concept-container {
+        display: flex;
+        position: relative;
 
         a {
           &.collapsed {
@@ -67,6 +61,10 @@
             position: absolute;
             right: 0;
 
+            @media screen and (min-width: $breakpoint-xl) {
+              display: none;
+            }
+
             &[src*="minus"] {
               transition: none;
             }
@@ -75,13 +73,6 @@
               transition: none;
             }
           }
-        }
-      }
-      .nav-item-concept-container-xl {
-        display: none;
-
-        @media screen and (min-width: $breakpoint-xl) {
-          display: block;
         }
       }
 
