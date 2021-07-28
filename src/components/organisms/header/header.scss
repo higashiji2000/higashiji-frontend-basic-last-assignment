@@ -114,9 +114,10 @@
           position: absolute;
           width: 220px;
           background-color: $black;
-          opacity: 0;
           transform: translateY(-10px);
-          transition: 0.5s;
+          opacity: 0;
+          visibility: hidden;
+          transition: 0.2s;
 
           .nav-item {
             margin: 0;
@@ -124,18 +125,16 @@
             a {
               padding-left: 18px;
               height: 56px;
-              display: none;
             }
           }
         }
 
         &:hover .concept-submenu {
-          opacity: 1;
           transform: translateY(0);
+          opacity: 1;
+          visibility: visible;
 
           a {
-            display: flex;
-
             &:hover {
               background-color: $orange_bistre;
               color: $white;
