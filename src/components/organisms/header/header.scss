@@ -36,18 +36,17 @@
       a {
         display: flex;
         align-items: center;
+        padding: 15px 0;
+        width: 100%;
 
-        &:first-child {
-          padding: 15px 0;
-          width: 100%;
-
-          @media screen and (min-width: $breakpoint-xl) {
-            height: 90px;
-            padding: 0 20px;
-          }
+        @media screen and (min-width: $breakpoint-xl) {
+          height: 90px;
+          padding: 0 20px;
         }
       }
+    }
 
+    .nav-item-concept {
       .nav-item-concept-container {
         display: flex;
         position: relative;
@@ -80,11 +79,11 @@
         list-style: none;
         padding: 0;
       }
-    }
-    .collapse,
-    .collapsing {
-      .nav-item-concept {
-        margin-left: 28px;
+      .collapse,
+      .collapsing {
+        .nav-item-concept {
+          margin-left: 28px;
+        }
       }
     }
   }
