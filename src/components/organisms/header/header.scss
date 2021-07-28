@@ -48,12 +48,14 @@
         }
       }
 
-      .nav-link-collapse-container-lg {
-        display: flex;
-        position: relative;
-
+      .nav-item-concept-container-lg {
         @media screen and (min-width: $breakpoint-xl) {
           display: none;
+        }
+
+        .nav-item-concept-container-lg-top {
+          display: flex;
+          position: relative;
         }
 
         a {
@@ -74,6 +76,10 @@
             }
           }
         }
+      }
+      ul {
+        list-style: none;
+        padding: 0;
       }
     }
     .collapse,
