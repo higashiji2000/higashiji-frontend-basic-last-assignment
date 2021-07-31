@@ -73,26 +73,20 @@
           &.collapsed {
             padding: 0;
           }
+        }
+
+        .concept-button {
+          padding: 0;
 
           img {
             position: absolute;
             right: 0;
+            transition: none;
 
             @media screen and (min-width: $breakpoint-xl) {
               display: none;
             }
-
-            &[src*="minus"] {
-              transition: none;
-            }
-
-            &[src*="plus"] {
-              transition: none;
-            }
           }
-        }
-        .concept-button {
-          padding: 0;
         }
       }
 
