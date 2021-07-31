@@ -65,7 +65,7 @@
     }
 
     .nav-item-concept {
-      .nav-item-concept-container {
+      .nav-item-concept-top {
         display: flex;
         position: relative;
 
@@ -77,6 +77,7 @@
 
         .concept-button {
           padding: 0;
+          width: fit-content;
 
           img {
             position: absolute;
@@ -96,10 +97,8 @@
       }
 
       .collapse,
-      .collapsing {
-        .nav-item-concept {
-          margin-left: 28px;
-        }
+      .collapsing.concept-submenu {
+        margin-left: 28px;
       }
 
       @media screen and (min-width: $breakpoint-xl) {
