@@ -67,7 +67,7 @@
         }
 
         @media screen and (min-width: $breakpoint-lg) {
-          div:first-child {
+          .events-article-img-wrapper {
             min-width: fit-content;
 
             img {
@@ -76,7 +76,7 @@
             }
           }
 
-          div:last-child p {
+          .events-article-text-wrapper p {
             -webkit-line-clamp: 2;
           }
         }
