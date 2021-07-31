@@ -68,11 +68,11 @@
 
         @media screen and (min-width: $breakpoint-lg) {
           div:first-child {
-            min-width: 221px;
+            min-width: fit-content;
 
             img {
               display: block;
-              width: 223px;
+              height: 140px;
             }
           }
 
