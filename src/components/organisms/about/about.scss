@@ -1,0 +1,16 @@
+@use "../../variables" as *;
+
+.about {
+  background-color: $white_smoke;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    margin-bottom: 100px;
+  }
+
+  .message-wrapper {
+    h2 {
+      color: $orange_bistre;
+    }
+  }
+}
