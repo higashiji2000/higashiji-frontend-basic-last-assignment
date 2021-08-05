@@ -1,0 +1,29 @@
+@use "../../variables" as *;
+
+.plans {
+  .plan-table-emphasized {
+    .plan-title {
+      padding-top: 15px;
+    }
+
+    dd:last-child {
+      padding-bottom: 15px;
+    }
+  }
+
+  .row {
+    @media screen and (min-width: $breakpoint-md) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      margin-bottom: 100px;
+    }
+  }
+}
