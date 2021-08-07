@@ -1,0 +1,23 @@
+@use "../../variables" as *;
+
+.cards {
+  .row {
+    margin: 0 -12px 0 -12px;
+
+    .col {
+      margin-bottom: 40px;
+      padding: 0 12px;
+
+      .card {
+        height: 100%;
+
+        .card-body {
+          justify-content: space-between;
+        }
+      }
+    }
+    @media screen and (min-width: $breakpoint-md) {
+      margin-bottom: 60px;
+    }
+  }
+}
