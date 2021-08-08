@@ -55,7 +55,6 @@ footer {
 
       li {
         list-style: none;
-        display: inline-block;
         padding: 4px 0;
         width: 50%;
 
@@ -81,12 +80,13 @@ footer {
     }
   }
   .copyright {
-    display: flex;
-    justify-content: center;
     padding: 16px 0;
     background-color: $black;
+    text-align: center;
 
     small {
+      display: block;
+      line-height: 1;
       font-size: $fontsize-xs;
       color: $white;
     }
