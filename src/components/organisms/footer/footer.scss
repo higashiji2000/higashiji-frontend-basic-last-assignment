@@ -1,0 +1,94 @@
+@use "../../variables" as *;
+
+footer {
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: $fontsize-s;
+    color: $black;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      padding: 52px;
+    }
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 2;
+      text-align: center;
+    }
+
+    .sns-list {
+      display: flex;
+      list-style: none;
+
+      i {
+        padding: 0 7px;
+        transition: color 0.2s;
+
+        &:hover {
+          color: $gray-nobel;
+        }
+      }
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-top: 1px solid $gray-nobel;
+      border-bottom: 1px solid $gray-nobel;
+      padding: 16px;
+      background-color: $white_smoke;
+
+      li {
+        list-style: none;
+        display: inline-block;
+        padding: 4px 0;
+        width: 50%;
+
+        @media screen and (min-width: $breakpoint-md) {
+          width: auto;
+          padding: 0 8px;
+          border-right: 1px solid $black;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+
+        a {
+          transition: color 0.2s;
+
+          &:hover {
+            color: $orange-bistre;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    background-color: $black;
+
+    small {
+      font-size: $fontsize-xs;
+      color: $white;
+    }
+  }
+}
