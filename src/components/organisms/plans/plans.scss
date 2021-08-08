@@ -5,17 +5,17 @@
     padding-top: 0;
   }
 
-  .plan-table-emphasized {
-    .plan-title {
-      padding-top: 15px;
+  .plan-table-container {
+    .plan-table-emphasized {
+      .plan-title {
+        padding-top: 15px;
+      }
+
+      dd:last-child {
+        padding-bottom: 15px;
+      }
     }
 
-    dd:last-child {
-      padding-bottom: 15px;
-    }
-  }
-
-  .row {
     @media screen and (min-width: $breakpoint-md) {
       margin-bottom: 40px;
     }
