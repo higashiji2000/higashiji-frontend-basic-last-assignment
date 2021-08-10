@@ -9,9 +9,7 @@ footer {
   }
 
   .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     padding: 32px;
 
     @media screen and (min-width: $breakpoint-md) {
@@ -30,6 +28,7 @@ footer {
 
     .sns-list {
       display: flex;
+      justify-content: center;
       list-style: none;
 
       i {
