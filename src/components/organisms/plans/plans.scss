@@ -3,6 +3,10 @@
 #plans {
   .message-wrapper {
     padding-top: 0;
+
+    .title-text {
+      color: $orange_bistre;
+    }
   }
 
   .plan-table-container {
