@@ -59,6 +59,11 @@
   border: 5px solid $orange_bistre;
 
   .plan-title {
+    padding-top: 15px;
     background-color: $orange_bistre;
+  }
+
+  dd:last-child {
+    padding-bottom: 15px;
   }
 }
