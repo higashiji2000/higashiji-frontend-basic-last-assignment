@@ -1,24 +1,15 @@
 @use "../../variables" as *;
 
 #cards {
-  padding: 0;
-
   .card-container {
-    @media screen and (min-width: $breakpoint-md) {
-      display: flex;
-
-      .card:nth-child(2) {
-        margin: 0 24px auto 24px;
-      }
-    }
-
     .card {
-      flex: 1;
       margin-bottom: 40px;
-    }
+      padding: 0;
 
-    @media screen and (min-width: $breakpoint-md) {
-      margin-bottom: 60px;
+      @media screen and (min-width: $breakpoint-md) {
+        flex: 1;
+        margin-bottom: 100px;
+      }
     }
   }
 }
