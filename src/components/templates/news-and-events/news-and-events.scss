@@ -1,0 +1,41 @@
+@use "../../variables" as *;
+
+.news-and-events {
+  margin: 56px 0 94px;
+
+  .news-and-events-inner {
+    .news-list {
+      margin-bottom: 35px;
+      width: auto;
+
+      @media screen and (min-width: $breakpoint-lg) {
+        margin-bottom: 0;
+        padding-right: 10px;
+      }
+    }
+
+    .events-list {
+      @media screen and (min-width: $breakpoint-lg) {
+        padding-left: 10px;
+
+        .news-title-wrapper {
+          margin-bottom: 32px;
+        }
+
+        .events-articles-container {
+          margin-bottom: 30px;
+
+          a {
+            article {
+              .events-article-img-wrapper {
+                img {
+                  height: 144px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
