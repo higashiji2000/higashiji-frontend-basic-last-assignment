@@ -1,0 +1,15 @@
+@use "../../variables" as *;
+
+#cards {
+  .card-container {
+    .card {
+      margin-bottom: 40px;
+      padding: 0;
+
+      @media screen and (min-width: $breakpoint-md) {
+        flex: 1;
+        margin-bottom: 100px;
+      }
+    }
+  }
+}
