@@ -722,7 +722,7 @@ footer .copyright small {
   justify-content: center;
   width: 100%;
   height: 360px;
-  background: url(../images/organisms-top-image.png) 50% 80% / cover;
+  background: url(./images/organisms-top-image.png) 50% 80% / cover;
 }
 @media screen and (min-width: 992px) {
   .top .top-image-wrapper {
