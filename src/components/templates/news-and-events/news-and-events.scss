@@ -1,10 +1,10 @@
 @use "../../variables" as *;
 
-.news-and-events-outer {
+#news-and-events {
   padding: 56px 0 94px;
   background-color: $white-smoke;
 
-  .news-and-events {
+  .container {
     .news-and-events-inner {
       .news-list {
         margin-bottom: 35px;
