@@ -1,29 +1,32 @@
 @use "../../variables" as *;
 
-.news-and-events {
-  margin: 56px auto 94px;
+#news-and-events {
+  padding: 56px 0 94px;
+  background-color: $white-smoke;
 
-  .news-and-events-inner {
-    .news-list {
-      margin-bottom: 35px;
-      width: auto;
+  .container {
+    .news-and-events-inner {
+      .news-list {
+        margin-bottom: 35px;
+        width: auto;
 
-      @media screen and (min-width: $breakpoint-lg) {
-        margin-bottom: 0;
-        padding-right: 10px;
-      }
-    }
-
-    .events-list {
-      @media screen and (min-width: $breakpoint-lg) {
-        padding-left: 10px;
-
-        .news-title-wrapper {
-          margin-bottom: 32px;
+        @media screen and (min-width: $breakpoint-lg) {
+          margin-bottom: 0;
+          padding-right: 10px;
         }
+      }
 
-        .events-articles-container {
-          margin-bottom: 30px;
+      .events-list {
+        @media screen and (min-width: $breakpoint-lg) {
+          padding-left: 10px;
+
+          .news-title-wrapper {
+            margin-bottom: 32px;
+          }
+
+          .events-articles-container {
+            margin-bottom: 30px;
+          }
         }
       }
     }

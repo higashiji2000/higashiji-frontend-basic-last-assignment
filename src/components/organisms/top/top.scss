@@ -1,13 +1,19 @@
 @use "../../variables" as *;
 
-.top {
+#top {
+  margin-bottom: 40px;
+  @media screen and (min-width: $breakpoint-lg) {
+    margin-bottom: 20px;
+  }
+
   .top-image-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 360px;
-    background: url(../../../images/organisms-top-image.png) 50% 80% / cover;
+    background: url(../../../page/images/organisms-top-image.png) 50% 80% /
+      cover;
 
     @media screen and (min-width: $breakpoint-lg) {
       height: 100vh;

@@ -4,13 +4,460 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>サイト制作課題</title>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>このファイルにサイトを作っていくよ。</h1>
+    <header>
+      <nav class="navbar navbar-expand-xl">
+        <div class="navbar-top">
+          <a class="navbar-brand" href="#"
+            ><img src="./images/organisms-header-logo.png" alt="Switch"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="humburger-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item nav-item-concept">
+              <div class="nav-item-concept-top">
+                <a class="nav-link" href="#">CONCEPT</a>
+                <a
+                  class="concept-button"
+                  data-toggle="collapse"
+                  href="#collapse-concept"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  <img
+                    src="./images/organisms-header-plus.svg"
+                    alt=""
+                    class="collapse show"
+                    id="collapse-concept"
+                  />
+                  <img
+                    src="./images/organisms-header-minus.svg"
+                    alt=""
+                    class="collapse"
+                    id="collapse-concept"
+                  />
+                </a>
+              </div>
+              <ul class="collapse concept-submenu" id="collapse-concept">
+                <li class="nav-item nav-item-concept">
+                  <a href="#" class="nav-link">ブログアーカイブ</a>
+                </li>
+                <li class="nav-item nav-item-concept">
+                  <a href="#" class="nav-link">お知らせアーカイブ</a>
+                </li>
+                <li class="nav-item nav-item-concept">
+                  <a href="#" class="nav-link">イベントアーカイブ</a>
+                </li>
+                <li class="nav-item nav-item-concept">
+                  <a href="#" class="nav-link">インタビューアーカイブ</a>
+                </li>
+                <li class="nav-item nav-item-concept">
+                  <a href="#" class="nav-link">FAQページ</a>
+                </li>
+                <li class="nav-item nav-item-concept">
+                  <a href="#" class="nav-link">固定ページ (デフォルト)</a>
+                </li>
+                <li class="nav-item nav-item-concept">
+                  <a href="#" class="nav-link">CONCEPT</a>
+                </li>
+                <li class="nav-item nav-item-concept">
+                  <a href="#" class="nav-link">SERVICE</a>
+                </li>
+                <li class="nav-item nav-item-concept">
+                  <a href="#" class="nav-link">FLOOR</a>
+                </li>
+                <li class="nav-item nav-item-concept">
+                  <a href="#" class="nav-link">ACCESS</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FLOOR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">INTERVIEW</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ACCESS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">DOWNLOAD</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="top">
+      <div class="top-image-wrapper">
+        <h2>
+          そうだ。<br />
+          カフェに行こう。
+        </h2>
+      </div>
+      <div class="top-message-container">
+        <div class="message-wrapper">
+          <h2 class="title-text">
+            カフェで読書＆コワーキング。快適のフロアスペース空間。
+          </h2>
+          <p class="explanation-text">
+            カフェエリアでコーヒーを注文し、ブックエリアでお好みの本を選び、コワーキングスペースでコーヒーと共に読書を楽しむ。<br />
+            学校・仕事帰りに、平日の日中に、休日にゆっくり...さまざまなライフスタイルに合わせてご利用いただける多彩なプランをご用意しております。
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="container">
+      <div class="row row-cols-2 row-cols-lg-4 img-wrapper">
+        <img src="./images/organisms-about-image1.png" alt="" />
+        <img src="./images/organisms-about-image3.png" alt="" />
+        <img src="./images/organisms-about-image2.png" alt="" />
+        <img src="./images/organisms-about-image4.png" alt="" />
+      </div>
+      <div class="message-wrapper">
+        <h2 class="title-text">
+          人と人、人と本が繋がるまったく新しい快適時間。
+        </h2>
+        <p class="explanation-text">
+          月額プラン以外にビジター料金でのご利用も可能です。通いやすい時間や曜日に合わせてプランをお選びください。<br />
+          ご登録プランは後の変更も可能ですので、資格試験等の目標がある場合など環境の変化に合わせて柔軟に対応しております。WiFiも電源も標準設備しており、<br />
+          時間を気にせず仕事や勉強に取り組めます。カフェでの長居は気が引けるという方にも心置きなくご利用いただけます。
+        </p>
+      </div>
+    </section>
+    <section id="cards" class="container">
+      <div class="row row-cols-1 row-cols-md-3 card-container">
+        <div class="card col">
+          <a href="#" class="card-img-wrapper">
+            <span class="card-title">CONCEPT</span>
+            <img
+              src="./images/molecules-card-image1.png"
+              class="card-img-top"
+              alt="室内のイメージ"
+            />
+          </a>
+          <div class="card-body justify-content-between">
+            <p class="card-text">
+              「本屋」でも「自習室」でもない、新しい空間。それがこのカフェ＆コワーキングです。お好きなドリンクを飲みながらゆったりと気兼ねなく勉強や仕事に取り組んでいただけます。
+            </p>
+            <a href="#" class="button card-button">コンセプト</a>
+          </div>
+        </div>
+        <div class="card col mx-md-4">
+          <a href="#" class="card-img-wrapper">
+            <span class="card-title">SERVICE</span>
+            <img
+              src="./images/molecules-card-image2.png"
+              class="card-img-top"
+              alt="ブックスペースのイメージ"
+            />
+          </a>
+          <div class="card-body justify-content-between">
+            <p class="card-text">
+              喫茶・軽食を楽しめるカフェスペース。ビジネス書から最新の雑誌まで取りそろえるブックスペース。ブース型のパーソナルワークスペースに、開放感があるコワーキングスペース。
+            </p>
+            <a href="#" class="button card-button">サービス</a>
+          </div>
+        </div>
+        <div class="card col">
+          <a href="#" class="card-img-wrapper">
+            <span class="card-title">FLOOR</span>
+            <img
+              src="./images/molecules-card-image3.png"
+              class="card-img-top"
+              alt="フロアーのイメージ"
+            />
+          </a>
+          <div class="card-body justify-content-between">
+            <p class="card-text">
+              カフェ・ブック・コワーキング。各エリアで異なるコンセプトを持つ当店では、目的や気分に合わせてフロア内を移動することで充実した時間をお過ごしいただけます。
+            </p>
+            <a href="#" class="button card-button">フロアー</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="news-and-events">
+      <div class="container">
+        <div class="news-and-events-inner row row-cols-1 row-cols-lg-2">
+          <section class="news-list col">
+            <div class="news-title-wrapper">
+              <h2 class="news-title">News</h2>
+              <span class="news-title-sub">お知らせ</span>
+            </div>
+            <div class="news-articles-container">
+              <a href="#">
+                <article>
+                  <time datetime="2018-6-20">2018.06.20</time>
+                  <p>
+                    ブックカフェ・コワーキング系サイト向けテーマ「Switch」をリリースしました。
+                  </p>
+                </article>
+              </a>
+              <a href="#">
+                <article>
+                  <time datetime="2018-8-16">2018.06.18</time>
+                  <p>
+                    3種のレイアウトから選択できるテンプレートを固定ページに実装
+                  </p>
+                </article>
+              </a>
+              <a href="#">
+                <article>
+                  <time datetime="2018-6-12">2018.06.12</time>
+                  <p>
+                    利用者からのご質問をまとめた「FAQ」ページをアップしました。
+                  </p>
+                </article>
+              </a>
+              <a href="#">
+                <article>
+                  <time datetime="2018-6-8">2018.06.08</time>
+                  <p>
+                    デモ用のサンプルデータを表示する「インポート機能」でサイト構築を快適に？
+                  </p>
+                </article>
+              </a>
+              <a href="#">
+                <article>
+                  <time datetime="2018-6-2">2018.06.02</time>
+                  <p>テーマのアップデート情報について</p>
+                </article>
+              </a>
+            </div>
+            <div class="news-and-events-more-wrapper">
+              <a href="#" class="news-and-events-more">
+                <p class="news-and-events-more-text">お知らせ一覧</p>
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </section>
+          <section class="events-list col">
+            <div class="news-title-wrapper">
+              <h2 class="news-title">Event</h2>
+              <span class="news-title-sub">イベント</span>
+            </div>
+            <div class="events-articles-container">
+              <a href="#">
+                <article>
+                  <div class="events-article-img-wrapper">
+                    <img
+                      src="./images/organisms-events-image2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="events-article-text-wrapper">
+                    <p>全ての業種に対応した起業応援セミナーを開催します。</p>
+                    <time datetime="2018-8-23">2018.08.23</time>
+                  </div>
+                </article>
+              </a>
+              <a href="#">
+                <article>
+                  <div class="events-article-img-wrapper">
+                    <img
+                      src="./images/organisms-events-image1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="events-article-text-wrapper">
+                    <p>第三回Switchクリエイター交流会開催いたします！</p>
+                    <time datetime="2018-8-23">2018.08.23</time>
+                  </div>
+                </article>
+              </a>
+              <a href="#">
+                <article>
+                  <div class="events-article-img-wrapper">
+                    <img
+                      src="./images/organisms-events-image3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="events-article-text-wrapper">
+                    <p>
+                      Webビジネス初心者の方必見！Webサイト作成講座を3回にわたって開催します。
+                    </p>
+                    <time datetime="2018-8-23">2018.08.23</time>
+                  </div>
+                </article>
+              </a>
+            </div>
+            <div class="news-and-events-more-wrapper">
+              <a href="#" class="news-and-events-more">
+                <p class="news-and-events-more-text">イベント一覧</p>
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section id="plans" class="container">
+      <div class="message-wrapper">
+        <h2 class="title-text">ライフスタイルに合わせて選べる多彩なプラン。</h2>
+        <p class="explanation-text">
+          平日のみのプラン、仕事帰りをコアタイムとした夕方以降が中心のプラン、休日をメインとしたプランなど、<br />
+          多彩なプランの中からそれぞれのお客様のライフスタイルに合わせてお選びいただけます。<br />
+          ビジター料金でのご利用も可能ですので、月額会員登録の前に体験をしたいという方もぜひご利用ください。<br />
+        </p>
+      </div>
+      <div class="row plan-table-container">
+        <div class="col-12 col-md-4">
+          <dl class="plan-table">
+            <dt class="plan-title">デイタイムプラン</dt>
+            <dd>
+              <span class="plan-price-text">5,000</span>
+              <span class="plan-price-subtext">月額</span>
+            </dd>
+            <dd>入会金0円</dd>
+            <dd>平日 : 9時～17時</dd>
+            <dd>土日祝 : 利用ナシ</dd>
+            <dd>コアタイムでの利用に最適なプラン</dd>
+          </dl>
+        </div>
+        <div class="col-12 col-md-4">
+          <dl class="plan-table plan-table-emphasized">
+            <dt class="plan-title">スタンダードプラン</dt>
+            <dd>
+              <span class="plan-price-text">15,000</span>
+              <span class="plan-price-subtext">月額</span>
+            </dd>
+            <dd>入会金0円</dd>
+            <dd>平日 : 17時～23時</dd>
+            <dd>土日祝 : 営業時間全て</dd>
+            <dd>営業時間内で終日ご利用可能なプラン</dd>
+          </dl>
+        </div>
+        <div class="col-12 col-md-4">
+          <dl class="plan-table">
+            <dt class="plan-title">プレミアムプラン</dt>
+            <dd>
+              <span class="plan-price-text">20,000</span>
+              <span class="plan-price-subtext">月額</span>
+            </dd>
+            <dd>入会金5000円</dd>
+            <dd>平日：営業時間全て</dd>
+            <dd>土日祝：営業時間全て</dd>
+            <dd>フルに使いたい方のためのプレミアムなプラン</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <a href="#" class="button">プラン料金</a>
+      </div>
+    </section>
+    <footer>
+      <div class="contact">
+        <a href="#" class="logo-wrapper"
+          ><img src="./images/logo-black.png" alt="Switch"
+        /></a>
+        <div class="info">
+          〒532-0011　大阪市淀川区西中島6丁目8-23テスト<br />
+          TEL.06-1234-5678 FAX.06-1234-5678　営業時間 / 9:00 - 22:00　定休日 /
+          不定休
+        </div>
+        <ul class="sns-list">
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-rss"></i></a>
+          </li>
+        </ul>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#">SERVICE</a>
+          </li>
+          <li>
+            <a href="#">INTERVIEW</a>
+          </li>
+          <li>
+            <a href="#">ACCESS</a>
+          </li>
+          <li>
+            <a href="#">CONCEPT</a>
+          </li>
+          <li>
+            <a href="#">FLOOR</a>
+          </li>
+          <li>
+            <a href="#">BLOG</a>
+          </li>
+          <li>
+            <a href="#">DOWNLOAD</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright">
+        <small
+          >Copyright © WordPressテーマ「Switch(tcd063)」 All Rights
+          Reserved.</small
+        >
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
