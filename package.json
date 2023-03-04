@@ -14,7 +14,9 @@
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@storybook/addon-viewport": "^6.5.12",
+    "@storybook/builder-webpack5": "^6.5.16",
     "@storybook/html": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.16",
     "babel-loader": "^8.2.5",
     "chromatic": "^6.10.1",
     "css-loader": "^6.7.1",
