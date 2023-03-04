@@ -15,6 +15,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v1
+        name: Use Node.js v14.17.5
+        with:
+          node-version: "14.17.5"
       - run: yarn
       - uses: chromaui/action@v1
         with:
